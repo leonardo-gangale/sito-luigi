@@ -1,7 +1,7 @@
 import Head from "next/head";
 import classes from "../styles/Home.module.css";
 import Link from "next/link";
-import Gallery from "@/components/gallery";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
