@@ -1,3 +1,15 @@
+.title {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+
+.mainImage {
+    width: 100%;
+}
+
 .flexContainer {
     position: relative;
     width: 90%;
@@ -14,7 +26,6 @@
 }
 
 .text {
-    margin: 0px;
     margin-right: 40px;
     font-size: 28px;
     font-family: 'Playfair Display';
@@ -39,9 +50,7 @@
     width: 100%;
     font-size: 40px;
     text-align: center;
-    margin-top: 50px;
 }
-
 
 .image {
     width: 50%;
@@ -49,31 +58,16 @@
     border-radius: 15px;
 }
 
-.images {
+.map {
     width: 50%;
-}
-
-.advantages {
-    margin-left: 80px;
-    line-height: 35px;
-}
-
-.moreSeparetedList {
-    margin: 0px;
-    padding: 0px;
-    line-height: 50px;
-    list-style-type: none;
-}
-
-.centralText {
-    font-size: 28px;
-    text-align: center;
+    height: 400px;
+    border-radius: 10px;
 }
 
 /*---------- SELECTION -----------*/
 .greenText::selection, .greenLink::selection,
 .text::selection, .text>*::selection,
-.sectionTitle::selection {
+.sectionTitle::selection, .title::selection {
     background-color: olivedrab;
     color: #fff;
 }
@@ -83,36 +77,23 @@
         margin-top: 20px;
     }
 
-    .text, .centralText {
+    .text {
         font-size: 20px;
-    }
-
-    .imageForGallery {
-        width: 80%;
-    }
-
-    .moreSeparetedList {
-        line-height: 30px;
     }
 }
 
 @media (max-width: 800px) {
+    .title {
+        font-size: 30px;
+    }
+
     .textContainer {
         width: 100%;
     }
 
-    .centralText, .text {
+    .text {
         margin-right: 0px;
         font-size: 18px;
-    }
-
-    .textContainer>.text {
-        margin-top: 8px;
-        margin-left: 5px;
-    }
-
-    .text>* {
-        margin: 10px 0px;
     }
 
     .image {
@@ -120,7 +101,11 @@
     }
 
     .flexContainer {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+    }
+
+    .map {
+        width: 100%;
     }
 
     .advantagesContainer {
@@ -133,11 +118,5 @@
 
     .advantages {
         margin: 0px;
-        padding-left: 32px;
-        line-height: 28px;
-    }
-
-    .imageForGallery {
-        width: 85%;
     }
 }
